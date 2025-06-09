@@ -113,7 +113,7 @@ const dataSourceItemProvider = async (userContext: IRVUserContext | null, dataSo
 // Step 4: REQUIRED Add Host, Database to connect.  Schema is optional.
 const dataSourceProvider = async (userContext: IRVUserContext | null, dataSource: RVDashboardDataSource) => {
 	if (dataSource instanceof RVPostgresDataSource) {
-		dataSource.host = "s0106docker2.infragistics.local";
+		dataSource.host = "infragistics.local";
 		dataSource.database = "Northwind";
 		// optional - set your schema
 		//dataSource.schema = "public";
