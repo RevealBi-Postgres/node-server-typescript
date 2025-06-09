@@ -1,3 +1,3 @@
 # Reveal Node Server - TypeScript
 
-nom install && npm start
+npm install && npm start
