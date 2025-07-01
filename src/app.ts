@@ -68,7 +68,7 @@ const userContextProvider = (request: IncomingMessage): RVUserContext => {
 // Step 2: REQUIRED Create an authentication provider with username / password to your Postgres database
 const authenticationProvider = async (userContext: IRVUserContext | null, dataSource: RVDashboardDataSource) => {
 	if (dataSource instanceof RVPostgresDataSource) {
-		return new RVUsernamePasswordDataSourceCredential("jason", "jason");
+		return new RVUsernamePasswordDataSourceCredential("", "");
 	}
 	return null;
 }
